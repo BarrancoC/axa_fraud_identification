@@ -31,7 +31,7 @@ def sliding_window_test(mymodel, test_data, Y_col,
                         print_evaluations=False):
     L = len(test_data)
     N = L//step + 1
-    header = "i0, i1, TN, FP, FN, TP, accuracy, precision, recall"
+    header = "i0, i1, TN, FP, TP, FN, accuracy, precision, recall"
     if print_evaluations:
         print(header)
     f = open(outputfile, "w")
